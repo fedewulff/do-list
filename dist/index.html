@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script defer src="main.js"></script></head>
+<body>
+    <div class="forms projectform">
+        
+            <form action="" class="form1 bothformsdisplay" >
+                <div>
+                    <label for="projectname">Title:</label>
+                    <input type="text" id="projectname">
+                </div>
+                <button class="projectformbutton" type="submit">Submit</button>
+            </form>
+    </div>
+
+        <div class="forms dolistform">
+        <form action="" class="form2 bothformsdisplay">
+            <div class="projectformitems">
+                <label for="dolisttitle">Title:</label>
+                <input type="text" id="dolisttitle">
+            </div>
+            <div class="projectformitems">
+                <label for='description'>Description</label>
+                <textarea id='description' name='abstract'></textarea>
+            </div>
+            <div class="projectformitems">
+                <label for="expiration">
+                    <span>Due date:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input
+                    type="text"
+                    id="date"
+                    name="date"
+                    required
+                    placeholder="MM/YY"
+                    pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" />
+            </div>
+            <div>
+                <div class="projectformitems">
+                    <div class="priority">Priority</div>
+                    <div>
+                        <input type="radio" id="lowprioritybutton" name="prioritybutton">
+                        <label for="lowprioritybutton">Low</label>
+                        <input type="radio" id="mediumprioritybutton" name="prioritybutton">
+                        <label for="mediumprioritybutton">Medium</label>
+                        <input type="radio" id="highprioritybutton" name="prioritybutton">
+                        <label for="highprioritybutton">High</label>
+                    </div>
+                </div>
+            </div>
+            <button class="dolistformbutton" type="submit">Submit</button>
+        </form>      
+        </div>
+
+        <div class="details">
+            <div class="detailscontent">
+                <div>Title:</div>
+                <div class="detailstitle"></div>
+            </div>
+            <div class="detailscontent">
+                <div>Description:</div>
+                <div class="detailsdescription"></div>
+            </div>
+            <div class="detailscontent">
+                <div>Date:</div>
+                <div class="detailsdate"></div>
+            </div>
+            <div class="detailscontent">
+                <div>Priority:</div>
+                <div class="detailspriority"></div>
+            </div>
+            <button class="hidedetails">Hide</button>
+        </div>
+    
+    <div class="maincontent">
+
+        <div class="projects">
+            <div class="titles">Projects</div>
+            <ul class="items">
+                <li class="home">Home</li>
+                <ul class="projectitems ">Projects
+
+                </ul>
+            </ul>
+            <button class="addbutton addprojectbutton">Add Project</button>
+        </div>
+
+        <div class="dolist">
+            <div class="titles">Do List</div>
+            <ul class="listitems items">
+                
+            </ul>
+            <button class="addbutton addlistbutton">+</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
